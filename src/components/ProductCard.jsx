@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, ShoppingBag, Star, Eye } from 'lucide-react';
+import { Heart, ShoppingBag, Star, Eye, MessageCircle } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
 import { formatPrice } from '../utils/formatPrice';
@@ -18,8 +18,8 @@ export const ProductCard = ({ product }) => {
     // Reliable fallback footwear photo if primary fails
     setImgSrc(
       product.audience === 'women'
-        ? '/images/women/women-footwear-01.jpg'
-        : '/images/men/men-footwear-01.jpg'
+        ? '/images/pdf-products/product-027.jpg'
+        : '/images/pdf-products/product-001.jpg'
     );
   };
 
@@ -77,6 +77,7 @@ export const ProductCard = ({ product }) => {
           <img
             src={imgSrc}
             alt={product.name}
+            loading="lazy"
             onError={handleImageError}
             onLoad={() => setImageLoaded(true)}
             className={`w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out ${
@@ -137,28 +138,22 @@ export const ProductCard = ({ product }) => {
           </p>
         </div>
 
-        {/* Price & Mobile WhatsApp CTA */}
+        {/* Order on WhatsApp CTA */}
         <div className="mt-2.5 pt-2.5 border-t border-brand-border/60 flex items-center justify-between">
-          <div className="flex items-baseline space-x-1.5">
-            <span className="text-sm font-bold text-brand-dark">
-              {formatPrice(product.price)}
-            </span>
-            {product.originalPrice && (
-              <span className="text-[10px] text-brand-muted/70 line-through">
-                {formatPrice(product.originalPrice)}
-              </span>
-            )}
-          </div>
+          <span className="text-[10px] font-semibold uppercase tracking-wider text-brand-gold">
+            Authentic Leather
+          </span>
 
           {/* WhatsApp Direct Order Button */}
           <a
             href={directWhatsAppUrl}
             target="_blank"
             rel="noopener noreferrer"
-            title="Quick Order on WhatsApp"
-            className="inline-flex items-center space-x-1 text-[11px] font-semibold text-[#20ba59] hover:text-[#189647] transition-colors"
+            title="Order on WhatsApp"
+            className="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-[#25D366]/10 hover:bg-[#25D366] text-[#189647] hover:text-white rounded-xs text-[11px] font-semibold transition-all shadow-xs"
           >
-            <span>WhatsApp</span>
+            <MessageCircle className="w-3.5 h-3.5 fill-current" />
+            <span>Order on WhatsApp</span>
           </a>
         </div>
       </div>

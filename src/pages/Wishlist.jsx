@@ -96,8 +96,8 @@ export const Wishlist = () => {
                       {product.name}
                     </Link>
                   </h3>
-                  <div className="mt-2 text-sm font-bold text-brand-dark">
-                    {formatPrice(product.price)}
+                  <div className="mt-2 text-xs font-semibold text-[#189647]">
+                    Inquire for Price
                   </div>
                 </div>
 

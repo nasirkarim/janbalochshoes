@@ -50,27 +50,27 @@ export const Home = () => {
   // Instagram gallery photography
   const lifestyleGallery = [
     {
-      image: '/images/men/men-footwear-01.jpg',
+      image: '/images/pdf-products/product-001.jpg',
       alt: 'Artisan Balochi and Peshawari leather craft'
     },
     {
-      image: '/images/women/women-footwear-01.jpg',
-      alt: 'Bridal embroidered women khussa'
+      image: '/images/pdf-products/product-027.jpg',
+      alt: 'Women comfort knit sneaker'
     },
     {
-      image: '/images/men/men-footwear-02.jpg',
+      image: '/images/pdf-products/product-011.jpg',
       alt: 'Heritage Pakistani leather chappal'
     },
     {
-      image: '/images/women/women-footwear-03.jpg',
-      alt: 'Festive party footwear for women'
+      image: '/images/pdf-products/product-032.jpg',
+      alt: 'Women platform star chain sneaker'
     },
     {
-      image: '/images/men/men-footwear-18.jpg',
+      image: '/images/pdf-products/product-016.jpg',
       alt: 'Executive formal shoe design'
     },
     {
-      image: '/images/men/men-footwear-24.jpg',
+      image: '/images/pdf-products/product-004.jpg',
       alt: 'Minimalist everyday casual sneaker'
     },
   ];
@@ -107,7 +107,7 @@ export const Home = () => {
               className="group relative overflow-hidden rounded-sm aspect-[16/9] sm:aspect-[21/9] bg-brand-dark flex items-center p-8 sm:p-12 shadow-sm border border-brand-border"
             >
               <img
-                src="/images/men/men-footwear-01.jpg"
+                src="/images/pdf-products/product-011.jpg"
                 alt="Men's Pakistani Footwear Collection"
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60"
               />
@@ -135,7 +135,7 @@ export const Home = () => {
               className="group relative overflow-hidden rounded-sm aspect-[16/9] sm:aspect-[21/9] bg-brand-dark flex items-center p-8 sm:p-12 shadow-sm border border-brand-border"
             >
               <img
-                src="/images/women/women-footwear-01.jpg"
+                src="/images/pdf-products/product-032.jpg"
                 alt="Women's Pakistani Footwear Collection"
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-60"
               />

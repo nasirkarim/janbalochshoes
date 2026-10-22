@@ -116,8 +116,8 @@ export const ProductDetails = () => {
                 alt={product.name}
                 onError={(e) => {
                   e.target.src = product.audience === 'women'
-                    ? '/images/women/women-footwear-01.jpg'
-                    : '/images/men/men-footwear-01.jpg';
+                    ? '/images/pdf-products/product-027.jpg'
+                    : '/images/pdf-products/product-001.jpg';
                 }}
                 className="w-full h-full object-cover object-center transition-all duration-300"
               />
@@ -152,8 +152,8 @@ export const ProductDetails = () => {
                       alt={`Thumbnail ${idx + 1}`}
                       onError={(e) => {
                         e.target.src = product.audience === 'women'
-                          ? '/images/women/women-footwear-01.jpg'
-                          : '/images/men/men-footwear-01.jpg';
+                          ? '/images/pdf-products/product-027.jpg'
+                          : '/images/pdf-products/product-001.jpg';
                       }}
                       className="w-full h-full object-cover"
                     />
@@ -184,21 +184,14 @@ export const ProductDetails = () => {
                 {product.name}
               </h1>
 
-              {/* Price */}
-              <div className="flex items-baseline space-x-3 mb-6 pb-6 border-b border-brand-border">
-                <span className="font-serif text-2xl sm:text-3xl font-bold text-brand-dark">
-                  {formatPrice(product.price)}
+              {/* Pricing & Inquiry Note */}
+              <div className="flex flex-wrap items-center gap-3 mb-6 pb-6 border-b border-brand-border">
+                <span className="inline-flex items-center space-x-1.5 px-3 py-1.5 bg-[#25D366]/10 text-[#189647] font-semibold text-xs rounded-sm">
+                  <span>Direct Price on WhatsApp Inquiry</span>
                 </span>
-                {product.originalPrice && (
-                  <span className="text-sm text-brand-muted/70 line-through">
-                    {formatPrice(product.originalPrice)}
-                  </span>
-                )}
-                {product.originalPrice && (
-                  <span className="text-xs uppercase tracking-wider font-semibold text-green-700 bg-green-50 px-2 py-0.5 rounded">
-                    Save {formatPrice(product.originalPrice - product.price)}
-                  </span>
-                )}
+                <span className="text-xs text-brand-muted font-light">
+                  Direct artisan pricing & size guidance via WhatsApp
+                </span>
               </div>
 
               {/* Descriptions */}

@@ -4,8 +4,8 @@ export const CATEGORIES = [
     name: "All Footwear",
     slug: 'all',
     audience: 'all',
-    description: "Explore our entire catalog of 100+ authentic Pakistani handcrafted footwear.",
-    image: '/images/men/men-footwear-01.jpg',
+    description: "Explore our entire catalog of 100 authentic Pakistani handcrafted footwear styles from our master catalog.",
+    image: '/images/pdf-products/product-001.jpg',
     itemCount: 100,
   },
   {
@@ -14,7 +14,7 @@ export const CATEGORIES = [
     slug: 'balochi-traditional',
     audience: 'all',
     description: "Authentic Balochi Chawat and regional handcrafted footwear celebrating Balochistan heritage.",
-    image: '/images/balochi/balochi-chawat-01.jpg',
+    image: '/images/pdf-products/product-001.jpg',
     itemCount: 12,
   },
   {
@@ -23,7 +23,7 @@ export const CATEGORIES = [
     slug: 'mens-chappal',
     audience: 'men',
     description: "Hand-stitched Peshawari chappals, Norozi cuts, Kaptaan styles, and tire-sole classics.",
-    image: '/images/men/men-footwear-02.jpg',
+    image: '/images/pdf-products/product-002.jpg',
     itemCount: 18,
   },
   {
@@ -31,8 +31,8 @@ export const CATEGORIES = [
     name: "Women's Khussa",
     slug: 'womens-khussa',
     audience: 'women',
-    description: "Intricately embroidered juttis, tilla work, mirror embellishments, and bridal khussas.",
-    image: '/images/women/women-footwear-01.jpg',
+    description: "Intricately crafted festive juttis, tilla work, mirror embellishments, and bridal khussas.",
+    image: '/images/pdf-products/product-074.jpg',
     itemCount: 18,
   },
   {
@@ -41,7 +41,7 @@ export const CATEGORIES = [
     slug: 'mens-shoes',
     audience: 'men',
     description: "Executive calfskin Oxfords, Derbies, Monkstraps, and hand-finished dress shoes.",
-    image: '/images/men/men-footwear-18.jpg',
+    image: '/images/pdf-products/product-016.jpg',
     itemCount: 12,
   },
   {
@@ -50,7 +50,7 @@ export const CATEGORIES = [
     slug: 'womens-shoes',
     audience: 'women',
     description: "Elegant party heels, block sandals, pointed wedding flats, and daily dress loafers.",
-    image: '/images/women/women-footwear-11.jpg',
+    image: '/images/pdf-products/product-032.jpg',
     itemCount: 14,
   },
   {
@@ -59,7 +59,7 @@ export const CATEGORIES = [
     slug: 'mens-sandals',
     audience: 'men',
     description: "Comfortable leather strap sandals, outdoor slides, and soft cushioned home slippers.",
-    image: '/images/men/men-footwear-13.jpg',
+    image: '/images/pdf-products/product-003.jpg',
     itemCount: 12,
   },
   {
@@ -68,7 +68,7 @@ export const CATEGORIES = [
     slug: 'womens-sandals',
     audience: 'women',
     description: "Chic open-toe party sandals, ethnic kolhapuris, cross-strap slides, and daily chappals.",
-    image: '/images/women/women-footwear-15.jpg',
+    image: '/images/pdf-products/product-050.jpg',
     itemCount: 12,
   },
   {
@@ -77,7 +77,7 @@ export const CATEGORIES = [
     slug: 'mens-sneakers',
     audience: 'men',
     description: "Contemporary minimal white sneakers, running trainers, canvas shoes, and driver loafers.",
-    image: '/images/men/men-footwear-24.jpg',
+    image: '/images/pdf-products/product-004.jpg',
     itemCount: 10,
   },
   {
@@ -86,7 +86,7 @@ export const CATEGORIES = [
     slug: 'womens-sneakers',
     audience: 'women',
     description: "Lightweight lifestyle trainers, breathable walking shoes, and daily slip-on comfort.",
-    image: '/images/women/women-footwear-36.jpg',
+    image: '/images/pdf-products/product-027.jpg',
     itemCount: 8,
   },
   {
@@ -95,7 +95,7 @@ export const CATEGORIES = [
     slug: 'festive-collection',
     audience: 'all',
     description: "Opulent wedding footwear, gold zardozi khussas, Eid specials, and mehndi selections.",
-    image: '/images/women/women-footwear-03.jpg',
+    image: '/images/pdf-products/product-025.jpg',
     itemCount: 20,
   },
   {
@@ -104,7 +104,7 @@ export const CATEGORIES = [
     slug: 'new-arrivals',
     audience: 'all',
     description: "Freshly crafted releases featuring limited artisan runs and seasonal trends.",
-    image: '/images/men/men-footwear-06.jpg',
+    image: '/images/pdf-products/product-034.jpg',
     itemCount: 16,
   },
 ];
