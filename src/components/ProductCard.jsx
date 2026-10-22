@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Heart, ShoppingBag, Star, Eye, MessageCircle } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
-import { formatPrice } from '../utils/formatPrice';
 import { getProductWhatsAppUrl } from '../utils/whatsapp';
 
 export const ProductCard = ({ product }) => {

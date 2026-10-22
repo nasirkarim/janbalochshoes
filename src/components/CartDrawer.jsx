@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { X, Trash2, Plus, Minus, ShoppingBag, ArrowRight } from 'lucide-react';
 import { useCart } from '../context/CartContext';
-import { formatPrice } from '../utils/formatPrice';
 import { getCartWhatsAppUrl } from '../utils/whatsapp';
 
 export const CartDrawer = () => {
@@ -127,9 +126,9 @@ export const CartDrawer = () => {
                         </button>
                       </div>
 
-                      {/* Line Item Total */}
-                      <span className="text-sm font-bold text-brand-dark">
-                        {formatPrice(item.price * item.quantity)}
+                      {/* Inquiry Label */}
+                      <span className="text-xs font-semibold text-[#189647]">
+                        Direct Inquiry
                       </span>
                     </div>
                   </div>
@@ -138,12 +137,12 @@ export const CartDrawer = () => {
             )}
           </div>
 
-          {/* Footer with Subtotal & WhatsApp CTA */}
+          {/* Footer with WhatsApp CTA */}
           {cart.length > 0 && (
             <div className="p-4 sm:p-6 border-t border-brand-border bg-brand-surface space-y-3">
               <div className="flex items-center justify-between text-sm">
-                <span className="text-brand-muted font-medium">Subtotal</span>
-                <span className="text-lg font-bold text-brand-dark">{formatPrice(subtotal)}</span>
+                <span className="text-brand-muted font-medium">Pricing & Bill</span>
+                <span className="text-sm font-bold text-[#189647]">Confirmed on WhatsApp</span>
               </div>
               <p className="text-[11px] text-brand-muted">
                 Taxes & delivery will be confirmed with the merchant on WhatsApp.

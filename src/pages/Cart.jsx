@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Trash2, Plus, Minus, ShoppingBag, ArrowLeft, ArrowRight, ShieldCheck, MessageCircle } from 'lucide-react';
 import { useCart } from '../context/CartContext';
-import { formatPrice } from '../utils/formatPrice';
 import { getCartWhatsAppUrl, DISPLAY_PHONE } from '../utils/whatsapp';
 
 export const Cart = () => {
@@ -87,8 +86,8 @@ export const Cart = () => {
                             {item.name}
                           </Link>
                         </h3>
-                        <span className="font-bold text-base text-brand-dark">
-                          {formatPrice(item.price * item.quantity)}
+                        <span className="font-semibold text-xs text-[#189647]">
+                          Inquire for Price
                         </span>
                       </div>
 
@@ -99,7 +98,6 @@ export const Cart = () => {
                         {item.selectedColor && (
                           <span>Finish: <strong className="text-brand-dark">{item.selectedColor}</strong></span>
                         )}
-                        <span>Unit: {formatPrice(item.price)}</span>
                       </div>
                     </div>
 
@@ -160,8 +158,8 @@ export const Cart = () => {
                   <span className="font-semibold text-brand-dark">{totalItems} Pairs</span>
                 </div>
                 <div className="flex justify-between text-brand-muted">
-                  <span>Subtotal</span>
-                  <span className="font-semibold text-brand-dark">{formatPrice(subtotal)}</span>
+                  <span>Price Quote</span>
+                  <span className="font-semibold text-[#189647]">Direct on WhatsApp</span>
                 </div>
                 <div className="flex justify-between text-brand-muted">
                   <span>Estimated Delivery</span>
@@ -169,7 +167,7 @@ export const Cart = () => {
                 </div>
                 <div className="pt-3 border-t border-brand-border flex justify-between text-sm font-bold text-brand-dark">
                   <span>Order Total</span>
-                  <span className="font-serif text-lg text-brand-dark">{formatPrice(subtotal)}</span>
+                  <span className="font-semibold text-xs text-[#189647]">Direct on WhatsApp</span>
                 </div>
               </div>
 

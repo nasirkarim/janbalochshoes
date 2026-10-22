@@ -4,7 +4,6 @@ import { Heart, ShoppingBag, Star, ShieldCheck, Truck, ChevronRight, Check, Spar
 import { PRODUCTS } from '../data/products';
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
-import { formatPrice } from '../utils/formatPrice';
 import { getProductWhatsAppUrl } from '../utils/whatsapp';
 import { ProductCard } from '../components/ProductCard';
 import { WhatsAppOrderButton } from '../components/WhatsAppButton';

@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Search, X, ArrowRight } from 'lucide-react';
 import { PRODUCTS } from '../data/products';
-import { formatPrice } from '../utils/formatPrice';
 
 export const SearchBar = ({ isOpen, onClose }) => {
   const [query, setQuery] = useState('');
@@ -126,10 +125,6 @@ export const SearchBar = ({ isOpen, onClose }) => {
                 <div className="flex items-center space-x-2 mt-0.5">
                   <span className="text-xs uppercase tracking-wider text-brand-muted">
                     {product.category.replace('-', ' ')}
-                  </span>
-                  <span className="text-brand-muted/40">•</span>
-                  <span className="text-xs font-bold text-brand-dark">
-                    {formatPrice(product.price)}
                   </span>
                 </div>
               </div>

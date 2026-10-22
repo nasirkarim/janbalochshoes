@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Heart, ShoppingBag, ArrowRight, Trash2 } from 'lucide-react';
 import { useWishlist } from '../context/WishlistContext';
 import { useCart } from '../context/CartContext';
-import { formatPrice } from '../utils/formatPrice';
 
 export const Wishlist = () => {
   const { wishlist, removeFromWishlist, clearWishlist } = useWishlist();

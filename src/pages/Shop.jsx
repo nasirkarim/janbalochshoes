@@ -4,7 +4,6 @@ import { Search, SlidersHorizontal, ArrowUpDown, RotateCcw, X, Check, Sparkles }
 import { PRODUCTS } from '../data/products';
 import { CATEGORIES } from '../data/categories';
 import { ProductCard } from '../components/ProductCard';
-import { formatPrice } from '../utils/formatPrice';
 
 export const Shop = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -271,8 +270,6 @@ export const Shop = () => {
               className="text-xs py-2 px-3 bg-brand-surface border border-brand-border rounded-sm text-brand-dark focus:outline-none focus:border-brand-gold font-medium cursor-pointer"
             >
               <option value="featured">Featured Picks</option>
-              <option value="price-low">Price: Low to High</option>
-              <option value="price-high">Price: High to Low</option>
               <option value="newest">New Arrivals First</option>
               <option value="bestseller">Bestsellers First</option>
             </select>
@@ -399,30 +396,7 @@ export const Shop = () => {
               </div>
             </div>
 
-            {/* Price Filter Slider */}
-            <div className="pt-6 border-t border-brand-border">
-              <div className="flex justify-between items-center mb-2">
-                <h3 className="font-serif text-sm font-bold uppercase tracking-wider text-brand-dark">
-                  Max Price
-                </h3>
-                <span className="text-xs font-bold text-brand-gold">
-                  {formatPrice(priceRange)}
-                </span>
-              </div>
-              <input
-                type="range"
-                min="2500"
-                max="10000"
-                step="500"
-                value={priceRange}
-                onChange={(e) => setPriceRange(Number(e.target.value))}
-                className="w-full accent-brand-gold cursor-pointer"
-              />
-              <div className="flex justify-between text-[11px] text-brand-muted mt-1.5">
-                <span>Rs. 2,500</span>
-                <span>Rs. 10,000</span>
-              </div>
-            </div>
+
 
             {/* Quick Badges Toggles */}
             <div className="pt-6 border-t border-brand-border space-y-2.5">
@@ -546,22 +520,7 @@ export const Shop = () => {
                 </div>
               </div>
 
-              {/* Price */}
-              <div className="pt-4 border-t border-brand-border">
-                <div className="flex justify-between items-center mb-2">
-                  <h4 className="text-xs uppercase font-bold text-brand-dark">Max Price</h4>
-                  <span className="text-xs font-bold text-brand-gold">{formatPrice(priceRange)}</span>
-                </div>
-                <input
-                  type="range"
-                  min="2500"
-                  max="10000"
-                  step="500"
-                  value={priceRange}
-                  onChange={(e) => setPriceRange(Number(e.target.value))}
-                  className="w-full accent-brand-gold"
-                />
-              </div>
+
 
               {/* Apply / Reset */}
               <div className="pt-6 border-t border-brand-border space-y-2">
